@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+body{
+    background-color:rgb(255, 255, 255);
+ font-family: 'Montserrat', sans-serif;
+  
+}
+
+.logo{
+    font-family:  "Norican", cursive;
+    font-weight: bold;
+    font-style:normal;
+    font-size:  1.5em;
+}
+
+.sign{
+    font-family:  "Norican", cursive;
+    font-weight: bold;
+    font-style:normal;
+    font-size:  1.5em;
+}
+.hero{
+    background-image: url('../Components/image/store8.jpg');
+    width:90% ;
+    top: 0%;
+    left: 5%;
+    height: 80vh;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: bg 10s linear infinite;
+}
+
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.explore{
+    text-shadow: 2px 2px 5px #ed3a50;
+}
+
+@keyframes bg {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+/* Default (Light Mode) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --nav-bg-color: #f8f9fa;
+    --button-bg-color: #e2e6ea;
+    --button-text-color: #000000;
+    --hover-bg-color: #dee2e6;
+  }
+  
+  /* Dark Mode */
+  :root.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-bg-color: #1e1e1e;
+    --button-bg-color: #333333;
+    --button-text-color: #ffffff;
+    --hover-bg-color: #444444;
+  }
+  
+  /* Apply theme variables */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav {
+    background-color: var(--nav-bg-color);
+  }
+  
+  button, input, a {
+    color: var(--text-color);
+  }
+  
+  button:hover, a:hover {
+    background-color: var(--hover-bg-color);
+  }
+  
+  
